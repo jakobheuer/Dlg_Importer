@@ -1,4 +1,4 @@
-# dlg_importer
+# DLG Files to URL via post request. Importer
 ## Functions
 * **Imports .DLG files into elasticsearch** by sending it to specified url
 * Sends post requests
