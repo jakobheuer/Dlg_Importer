@@ -97,6 +97,8 @@ else:
                             print("[" + current_time() + "]\t Outcome: [" + response.text + "]\t Sent File: [" + sys.argv[1] + "\\" + f + "]\t" + str(i) + "/" + str(numberOfFiles))
                             logging.info("[" + current_time() + "],\t Outcome: [" + response.text + "]\t Sent File: [" + sys.argv[1] + "\\" + f + "]\t" + str(i) + "/" + str(numberOfFiles))
                             a_file.close()
+                            z=(int(i)/int(numberOfFiles))*100
+                            print(z)
                             if(response.text=="already-imported"):
                                 alreadyImported = alreadyImported + 1
                                 os.replace(sys.argv[1] + "\\"+ f, sys.argv[1] + "\\Imported\\"+ f)
