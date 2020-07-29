@@ -99,7 +99,6 @@ else:
                             a_file.close()
                             z=(int(i)/int(numberOfFiles))*100
                             print(z)
-                            test
                             if(response.text=="already-imported"):
                                 alreadyImported = alreadyImported + 1
                                 os.replace(sys.argv[1] + "\\"+ f, sys.argv[1] + "\\Imported\\"+ f)
@@ -128,10 +127,5 @@ else:
     elif(path.exists(sys.argv[1])==False): #If path is not a directory
         print("Error: [" + sys.argv[1] + "] wasn't found. Please check if the given path is correct.")
         logging.warning("[" + current_time() + "],\t [" + sys.argv[1] + "] wasn't found.\n")
-"""
-for x in range (0,5):
-    b = "Loading" + "." * x
-    print (b, end="\r")
-    time.sleep(1)
-    """
+
 endImporter(False)
