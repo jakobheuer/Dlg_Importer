@@ -99,6 +99,7 @@ else:
                             a_file.close()
                             z=(int(i)/int(numberOfFiles))*100
                             print(z)
+                            test
                             if(response.text=="already-imported"):
                                 alreadyImported = alreadyImported + 1
                                 os.replace(sys.argv[1] + "\\"+ f, sys.argv[1] + "\\Imported\\"+ f)
