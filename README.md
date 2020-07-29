@@ -6,6 +6,7 @@
 * Checks if user needs manual
 * Extensive logging capabilities, User can specify logging directory
 * Catches exceptions
+* Moves files to other directory after they are imported
 * Prints readable results in table
 ## Imports
 You will need to install **tabulate** in order to run it. Maybe other imports are missing aswell. 
